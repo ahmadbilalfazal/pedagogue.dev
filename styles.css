@@ -125,6 +125,25 @@ input[type="email"]:focus {
     gap: 10px; /* Space between icon and text */
 }
 
+.cta-button {
+    background: linear-gradient(135deg, #64ffda, #007BFF); /* Gradient from neon teal to bright blue */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px; /* More rounded corners */
+    font-size: 1.2rem;
+    font-weight: 500; /* Medium font weight */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3); /* Subtle glow */
+}
+
 .cta-button::before {
     content: '';
     position: absolute;
@@ -132,7 +151,7 @@ input[type="email"]:focus {
     left: 50%;
     width: 300%;
     height: 300%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
     transform: translate(-50%, -50%) scale(0);
     transition: transform 0.5s ease;
     border-radius: 50%;
@@ -140,9 +159,9 @@ input[type="email"]:focus {
 }
 
 .cta-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background: linear-gradient(135deg, #007BFF, #64ffda); /* Reverse gradient on hover */
     transform: translateY(-3px); /* Slight lift effect */
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4); /* Glow effect */
+    box-shadow: 0 8px 25px rgba(100, 255, 218, 0.5); /* Stronger glow on hover */
 }
 
 .cta-button:hover::before {
