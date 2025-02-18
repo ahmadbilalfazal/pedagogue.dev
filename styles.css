@@ -106,28 +106,9 @@ input[type="email"]:focus {
     outline: none;
 }
 
-/* Updated Button Styles */
 .cta-button {
-    background-color: #007BFF; /* Bright blue */
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 8px; /* Slightly rounded corners */
-    font-size: 1.2rem;
-    font-weight: 500; /* Medium font weight */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Space between icon and text */
-}
-
-.cta-button {
-    background: linear-gradient(135deg, #64ffda, #007BFF); /* Gradient from neon teal to bright blue */
-    color: white;
+    background: linear-gradient(135deg, #00FFC2, #00A8FF); /* Gradient from neon cyan to bright blue */
+    color: #1A1A2E; /* Dark navy text for contrast */
     padding: 15px 30px;
     border: none;
     border-radius: 12px; /* More rounded corners */
@@ -141,7 +122,7 @@ input[type="email"]:focus {
     align-items: center;
     justify-content: center;
     gap: 10px; /* Space between icon and text */
-    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3); /* Subtle glow */
+    box-shadow: 0 4px 15px rgba(0, 255, 194, 0.3); /* Subtle glow */
 }
 
 .cta-button::before {
@@ -159,9 +140,9 @@ input[type="email"]:focus {
 }
 
 .cta-button:hover {
-    background: linear-gradient(135deg, #007BFF, #64ffda); /* Reverse gradient on hover */
+    background: linear-gradient(135deg, #00A8FF, #00FFC2); /* Reverse gradient on hover */
     transform: translateY(-3px); /* Slight lift effect */
-    box-shadow: 0 8px 25px rgba(100, 255, 218, 0.5); /* Stronger glow on hover */
+    box-shadow: 0 8px 25px rgba(0, 255, 194, 0.5); /* Stronger glow on hover */
 }
 
 .cta-button:hover::before {
