@@ -172,12 +172,19 @@ input[type="email"]:focus {
         margin: 0 auto; /* Center the container */
     }
 
+   header {
+        margin-bottom: 20px; /* Add spacing below the header */
+        overflow: visible; /* Ensure header content is not hidden */
+        z-index: 999; /* Bring header to the front */
+    }
+
     h1 {
-        font-size: 2rem; /* Smaller font size for headings */
-        white-space: nowrap; /* Prevent title from wrapping */
-        overflow: hidden; /* Hide overflow */
-        text-overflow: ellipsis; /* Add ellipsis if text overflows */
-        max-width: 100%; /* Ensure title doesn't overflow the container */
+        font-size: 2rem; /* Smaller font size for mobile */
+        white-space: normal; /* Allow text to wrap */
+        overflow: visible; /* Ensure title is not hidden */
+        max-width: 100%; /* Prevent overflow */
+        white-space: normal; /* Allow text to wrap if needed */
+        overflow: visible; /* Ensure title is not hidden */
     }
 
     .tagline {
