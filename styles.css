@@ -160,27 +160,56 @@ input[type="email"]:focus {
     margin-top: 10px;
 }
 
-/* Responsive Design */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
-    .features {
-        flex-direction: column;
-        align-items: center;
+    body {
+        padding: 20px; /* Add some padding to the body */
     }
 
-    .feature {
-        width: 80%;
-        margin-bottom: 20px;
+    .hero {
+        padding: 20px; /* Reduce padding for smaller screens */
+        width: 90%; /* Make the container take up more screen width */
+        margin: 0 auto; /* Center the container */
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem; /* Smaller font size for headings */
     }
 
     .tagline {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Smaller font size for tagline */
     }
 
     .content p {
-        font-size: 1rem;
+        font-size: 1rem; /* Smaller font size for paragraphs */
+    }
+
+    .features {
+        flex-direction: column; /* Stack features vertically */
+        align-items: center; /* Center-align features */
+    }
+
+    .feature {
+        width: 100%; /* Full width for feature cards */
+        margin-bottom: 20px; /* Add spacing between stacked features */
+    }
+
+    form {
+        flex-direction: column; /* Stack form elements vertically */
+        align-items: center; /* Center-align form elements */
+    }
+
+    input[type="email"] {
+        width: 100%; /* Full width for input field */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add spacing between input and button */
+    }
+
+    .cta-button {
+        width: 100%; /* Full width for button */
+    }
+
+    .form-note {
+        text-align: center; /* Center-align the note */
     }
 }
