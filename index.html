@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedagogue.dev - Coming Soon!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 <body>
     <div class="hero">
         <header>
+            <img src="assets/logo.png" alt="Pedagogue Logo" class="logo">
             <h1>Pedagogue.dev</h1>
             <p class="tagline">AI-Powered Coding Education</p>
         </header>
@@ -26,7 +28,7 @@
                 <div class="feature">
                     <img src="assets/ai-icon.svg" alt="AI Icon" class="icon">
                     <h3>Focus on Fundamentals</h3>
-                    <p>Master the core concepts of programming and OOP.</p>
+                    <p>Master the core concepts of Programming Fundamentals and OOP.</p>
                 </div>
                 <div class="feature">
                     <img src="assets/ai-icon.svg" alt="AI Icon" class="icon">
@@ -34,7 +36,11 @@
                     <p>Learn by solving real-world coding challenges.</p>
                 </div>
             </div>
-            <a href="mailto:contact@pedagogue.dev" class="cta-button">Notify Me</a>
+            <form id="notify-form" action="https://formspree.io/f/xvgzdopb" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="cta-button">Notify Me</button>
+            </form>
+            <p class="form-note">We'll notify you when we launch. No spam, promise!</p>
         </div>
     </div>
     <script src="script.js"></script>
