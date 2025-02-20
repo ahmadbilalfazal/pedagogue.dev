@@ -1,24 +1,22 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0a192f; /* Dark blue background */
-    color: #ccd6f6; /* Light gray text */
+    background-color: #0a192f;
+    color: #ccd6f6;
     text-align: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('assets/bg-pattern.png'); /* Subtle tech pattern */
+    background-image: url('assets/bg-pattern.png');
     background-size: cover;
 }
 
-/* Container for content */
 .hero {
     max-width: 1200px;
     padding: 40px;
-    background-color: rgba(17, 34, 64, 0.9); /* Slightly lighter blue with transparency */
+    background-color: rgba(17, 34, 64, 0.9);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -31,12 +29,12 @@ h1 {
     font-size: 3rem;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #64ffda; /* Neon teal for headings */
+    color: #64ffda;
 }
 
 .tagline {
     font-size: 1.5rem;
-    color: #8892b0; /* Light gray for tagline */
+    color: #8892b0;
 }
 
 .content p {
@@ -70,16 +68,15 @@ h1 {
 
 .feature h3 {
     font-size: 1.5rem;
-    color: #64ffda; /* Neon teal for feature titles */
+    color: #64ffda;
     margin-bottom: 10px;
 }
 
 .feature p {
     font-size: 1rem;
-    color: #ccd6f6; /* Light gray for feature text */
+    color: #ccd6f6;
 }
 
-/* Add these styles to your existing CSS */
 form {
     display: flex;
     justify-content: center;
@@ -87,33 +84,32 @@ form {
     margin-bottom: 20px;
 }
 
-/* Updated Input Field Styles */
 input[type="email"] {
     padding: 15px;
     width: 300px;
-    border: 2px solid #64ffda; /* Neon teal border */
-    border-radius: 8px; /* Slightly rounded corners */
+    border: 2px solid #64ffda;
+    border-radius: 8px;
     background-color: transparent;
-    color: #ccd6f6; /* Light gray text */
+    color: #ccd6f6;
     font-size: 1rem;
     margin-right: 10px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input[type="email"]:focus {
-    border-color: #007BFF; /* Bright blue border on focus */
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Glow effect */
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
     outline: none;
 }
 
 .cta-button {
-    background: linear-gradient(135deg, #00FFC2, #00A8FF); /* Gradient from neon cyan to bright blue */
-    color: #1A1A2E; /* Dark navy text for contrast */
+    background: linear-gradient(135deg, #00FFC2, #00A8FF);
+    color: #1A1A2E;
     padding: 15px 30px;
     border: none;
-    border-radius: 12px; /* More rounded corners */
+    border-radius: 12px;
     font-size: 1.2rem;
-    font-weight: 500; /* Medium font weight */
+    font-weight: 500;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -121,8 +117,8 @@ input[type="email"]:focus {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Space between icon and text */
-    box-shadow: 0 4px 15px rgba(0, 255, 194, 0.3); /* Subtle glow */
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 255, 194, 0.3);
 }
 
 .cta-button::before {
@@ -140,9 +136,9 @@ input[type="email"]:focus {
 }
 
 .cta-button:hover {
-    background: linear-gradient(135deg, #00A8FF, #00FFC2); /* Reverse gradient on hover */
-    transform: translateY(-3px); /* Slight lift effect */
-    box-shadow: 0 8px 25px rgba(0, 255, 194, 0.5); /* Stronger glow on hover */
+    background: linear-gradient(135deg, #00A8FF, #00FFC2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 255, 194, 0.5);
 }
 
 .cta-button:hover::before {
@@ -160,67 +156,66 @@ input[type="email"]:focus {
     margin-top: 10px;
 }
 
-/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     body {
-        padding: 20px; /* Add some padding to the body */
+        padding: 20px;
     }
 
     .hero {
-        padding: 20px; /* Reduce padding for smaller screens */
-        width: 90%; /* Make the container take up more screen width */
-        margin: 0 auto; /* Center the container */
+        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
     }
 
    header {
-        margin-bottom: 20px; /* Add spacing below the header */
-        overflow: visible; /* Ensure header content is not hidden */
-        z-index: 999; /* Bring header to the front */
+        margin-bottom: 20px;
+        overflow: visible;
+        z-index: 999;
     }
 
     h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
-        white-space: normal; /* Allow text to wrap */
-        overflow: visible; /* Ensure title is not hidden */
-        max-width: 100%; /* Prevent overflow */
-        white-space: normal; /* Allow text to wrap if needed */
-        overflow: visible; /* Ensure title is not hidden */
+        font-size: 2rem;
+        white-space: normal;
+        overflow: visible;
+        max-width: 100%;
+        white-space: normal;
+        overflow: visible;
     }
 
     .tagline {
-        font-size: 1.2rem; /* Smaller font size for tagline */
+        font-size: 1.2rem;
     }
 
     .content p {
-        font-size: 1rem; /* Smaller font size for paragraphs */
+        font-size: 1rem;
     }
 
     .features {
-        flex-direction: column; /* Stack features vertically */
-        align-items: center; /* Center-align features */
+        flex-direction: column;
+        align-items: center;
     }
 
     .feature {
-        width: 100%; /* Full width for feature cards */
-        margin-bottom: 20px; /* Add spacing between stacked features */
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     form {
-        flex-direction: column; /* Stack form elements vertically */
-        align-items: center; /* Center-align form elements */
+        flex-direction: column;
+        align-items: center;
     }
 
     input[type="email"] {
-        width: 100%; /* Full width for input field */
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 10px; /* Add spacing between input and button */
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 
     .cta-button {
-        width: 100%; /* Full width for button */
+        width: 100%;
     }
 
     .form-note {
-        text-align: center; /* Center-align the note */
+        text-align: center;
     }
 }
